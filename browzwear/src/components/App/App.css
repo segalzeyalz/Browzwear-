@@ -1,0 +1,17 @@
+:local(.Card) {
+    border-radius: 2px;
+    height: 345px;
+    width: 974px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background-color: white;
+    padding: 0;
+    margin: auto;
+  }
+
+  :local(.App) {
+    background-color: #F5F5F5;
+    width:1200px;
+    margin: auto;
+  }
+
+  
