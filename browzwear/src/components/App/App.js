@@ -1,18 +1,43 @@
 import React, { Component } from 'react';
 import clients from './../../clients.json'
+import Titles from './../Titles/'
 import CSS from './App.css';
 
 class App extends Component {
-  constructor(props){
-    super()
-    this.state = {
 
-    }
-  }
   render() {
     return (
       <div className={CSS.App}>
-          <div className={CSS.Card}></div>
+          <div className={CSS.Card}>
+          <Titles />
+          <hr className={CSS.HR}/>
+          <select>
+            <option>dddddddddddddddddd</option>
+            <option>dddddddddddddddddd</option>
+            <option>dddddddddddddddddd</option>
+            <option>dddddddddddddddddd</option>
+            <option>dddddddddddddddddd</option>
+            <option>dddddddddddddddddd</option>
+            <option>dddddddddddddddddd</option>
+          </select>
+          <select>
+            <option>dddddddddddddddddd</option>
+            <option>dddddddddddddddddd</option>
+            <option>dddddddddddddddddd</option>
+            <option>dddddddddddddddddd</option>
+            <option>dddddddddddddddddd</option>
+            <option>dddddddddddddddddd</option>
+            <option>dddddddddddddddddd</option>
+          </select><select>
+            <option>dddddddddddddddddd</option>
+            <option>dddddddddddddddddd</option>
+            <option>dddddddddddddddddd</option>
+            <option>dddddddddddddddddd</option>
+            <option>dddddddddddddddddd</option>
+            <option>dddddddddddddddddd</option>
+            <option>dddddddddddddddddd</option>
+          </select>
+          </div>
       </div>
     );
   }

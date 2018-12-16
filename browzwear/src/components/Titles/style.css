@@ -1,0 +1,29 @@
+:local(.Container) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: flex-start;
+}
+:local(.Countries) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+:local(.Cities) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+:local(.Companies) {
+}
+
+:local(.Map) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: flex-start;
+    margin-right:30px;
+}
