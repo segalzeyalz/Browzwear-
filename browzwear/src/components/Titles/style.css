@@ -5,16 +5,14 @@
     justify-content: space-between;
     align-content: space-between;
     align-items: flex-start;
+    font-size: 18px;
+    font-weight: 700;
 }
 :local(.Countries) {
-    order: 0;
-    flex: 0 1 auto;
     align-self: auto;
 }
 
 :local(.Cities) {
-    order: 0;
-    flex: 0 1 auto;
     align-self: auto;
 }
 
@@ -22,8 +20,5 @@
 }
 
 :local(.Map) {
-    order: 0;
-    flex: 0 1 auto;
-    align-self: flex-start;
     margin-right:30px;
 }

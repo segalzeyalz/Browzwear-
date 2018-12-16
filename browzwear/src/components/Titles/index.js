@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import CSS from './style.css';
 
 const Titles = (props) => {
