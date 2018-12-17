@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CSS from './DataSelect.css'
+import * as actionTypes from '../../Store/actions';
 import { connect } from 'react-redux';
-import * as actionTypes from '../Store/actions';
 
 class DataSelect extends Component {    
     componentDidMount(){
@@ -11,23 +11,26 @@ class DataSelect extends Component {
         // this.props.updateDays()
     }
     render () {
+            let {type} = this.props
+            let newArr = this.props.data.map(function(item) { return item[type]; })
+            let newNew = newArr.filter(function(item, pos){
+                return newArr.indexOf(item)== pos; 
+              });
+              console.log(newNew) 
         return (
             <div className={CSS.Container}>
-                {/* {daysArray.map((day,index) => (
-                    <Day 
-                        key={index}
-                        num={index+1} 
-                        date={dates[monthIdx]} 
-                        startDay={this.props.startDay}
-                        clicked={this.props.onSelectDay}/>
-                ))} */}
-            </div>
+            {newNew.map((item)=>{
+                return <div><font>{item}</font><br/></div>
+            })}
+            <br/>
+                </div>
         );
     }
 }
 
 const mapStateToProps = state => {
     return {
+        data:state.data
     };
 };
 

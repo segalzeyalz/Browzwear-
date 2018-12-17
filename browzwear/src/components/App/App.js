@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Titles from './../Titles/'
 import CSS from './App.css';
-
+import DataSelect from './DataSelect'
 class App extends Component {
 
   render() {
@@ -10,7 +10,9 @@ class App extends Component {
           <div className={CSS.Card}>
           <Titles />
           <hr className={CSS.HR}/>
-          
+            <DataSelect type="Country"/>
+            <DataSelect type="City" filterBy="Country"/>
+            <DataSelect type= "Id" filterBy="City"/>
           </div>
       </div>
     );
