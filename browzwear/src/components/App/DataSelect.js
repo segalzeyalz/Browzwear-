@@ -18,8 +18,8 @@ class DataSelect extends Component {
               });
         return (
             <div className={CSS.Container}>
-            {sortedData.map((item)=>{
-                return <div className={CSS.Item}><font className={CSS.TextStyle}>{item}</font><br/></div>
+            {sortedData.map((item, index)=>{
+                return <div key={index} className={CSS.Item}><font className={CSS.TextStyle}>{item}</font><br/></div>
             })}
             <br/>
                 </div>
