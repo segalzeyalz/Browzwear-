@@ -1,7 +1,13 @@
 import * as actionTypes from './actions';
 import data from './clients.json';
 const initialState = {
-    data:data.Customers
+    data:data.Customers,
+    selected: {
+        Country: '',
+        City: '',
+        ID:''
+    },
+    MapFocus:''
 }
 
 const reducer = (state = initialState, action) => {
@@ -10,6 +16,14 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state
             }
+        case actionTypes.UPDATE_SELECTED:
+            let selected = {...this.state.selected}
+            selected[action.typeData]=action.val;
+            return {
+                ...state,
+                selected:selected
+            }
+        
     }
     return state;
 };

@@ -8,11 +8,13 @@ class App extends Component {
     return (
       <div className={CSS.App}>
           <div className={CSS.Card}>
-          <Titles />
-          <hr className={CSS.HR}/>
-            <DataSelect type="Country"/>
-            <DataSelect type="City" filterBy="Country"/>
-            <DataSelect type= "Id" filterBy="City"/>
+            <Titles />
+            <hr className={CSS.HR}/>
+            <div className={CSS.Container}>
+              <DataSelect type="Country"/>
+              <DataSelect type="City" filterBy="Country"/>
+              <DataSelect type= "Id" filterBy="City"/>
+            </div>
           </div>
       </div>
     );

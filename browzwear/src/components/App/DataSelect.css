@@ -3,3 +3,16 @@
     width: 250px;
     overflow-y: scroll;    
   }
+  :local(.SelectedItem) {
+    color: white;
+    background-color: #007AFF;
+    padding: 5px;
+  }
+  :local(.Item) {
+    color: #007AFF;
+    background-color: #fff;
+    padding: 5px;
+  }
+  :local(.TextStyle) {
+    font-weight: 600;
+  } 

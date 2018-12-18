@@ -13,6 +13,17 @@
     margin: auto;
     height: 518px;
   }
+
+  :local(.Container) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: flex-start;
+    font-size: 18px;
+    font-weight: 700;    
+  }
   :local(.HR) {
     background-color: #A9A9A9;
   }

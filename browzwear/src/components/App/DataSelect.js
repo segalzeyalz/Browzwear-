@@ -5,22 +5,21 @@ import { connect } from 'react-redux';
 
 class DataSelect extends Component {    
     componentDidMount(){
-        // this.props.updateDays()
     }
     componentWillMount(){
-        // this.props.updateDays()
     }
     render () {
-            let {type} = this.props
-            let newArr = this.props.data.map(function(item) { return item[type]; })
-            let newNew = newArr.filter(function(item, pos){
-                return newArr.indexOf(item)== pos; 
+            let { type } = this.props
+            
+            let rellevantData = this.props.data.map(function(item) { return item[type]; })
+            
+            let sortedData = rellevantData.filter(function(item, pos){
+                return rellevantData.indexOf(item)== pos; 
               });
-              console.log(newNew) 
         return (
             <div className={CSS.Container}>
-            {newNew.map((item)=>{
-                return <div><font>{item}</font><br/></div>
+            {sortedData.map((item)=>{
+                return <div className={CSS.Item}><font className={CSS.TextStyle}>{item}</font><br/></div>
             })}
             <br/>
                 </div>
