@@ -3,9 +3,9 @@ import data from './clients.json';
 const initialState = {
     data:data.Customers,
     selected: {
-        Country: '',
-        City: '',
-        ID:''
+        Country: 0,
+        City: 0,
+        Id:0
     },
     MapFocus:''
 }
@@ -13,12 +13,14 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case actionTypes.GET_DATA:
+        console.log(state.data[selected.Country])
             return {
                 ...state
             }
         case actionTypes.UPDATE_SELECTED:
-            let selected = {...this.state.selected}
-            selected[action.typeData]=action.val;
+            console.log(action)
+            let selected = {...state.selected}
+            selected[action.typeData]=action.selected;
             return {
                 ...state,
                 selected:selected

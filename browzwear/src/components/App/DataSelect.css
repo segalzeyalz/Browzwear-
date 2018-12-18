@@ -2,6 +2,7 @@
     height: 300px;
     width: 250px;
     overflow-y: scroll;    
+    cursor: pointer;
   }
   :local(.SelectedItem) {
     color: white;
